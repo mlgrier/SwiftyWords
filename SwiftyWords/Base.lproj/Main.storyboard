@@ -234,6 +234,7 @@
                         <outlet property="answersLabel" destination="PW0-3a-2Ck" id="mCM-el-Yqa"/>
                         <outlet property="cluesLabel" destination="4Nk-Er-EvX" id="cMK-6t-eKH"/>
                         <outlet property="currentAnswer" destination="NiE-U6-3oe" id="NH9-Xy-gj0"/>
+                        <outlet property="scoreLabel" destination="b0y-lx-rkR" id="hhG-8j-AF5"/>
                         <outlet property="scoreLable" destination="b0y-lx-rkR" id="w4a-to-m63"/>
                     </connections>
                 </viewController>
