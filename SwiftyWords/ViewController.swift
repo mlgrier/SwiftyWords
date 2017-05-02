@@ -36,6 +36,7 @@ class ViewController: UIViewController {
             
         }
         
+        loadLevel()
         
     }
     
@@ -86,6 +87,20 @@ class ViewController: UIViewController {
         }
         
         // now configure the buttons and labels
+        
+        cluesLabel.text = clueString.trimmingCharacters(in: .whitespacesAndNewlines)
+        answersLabel.text = solutionString.trimmingCharacters(in: .whitespacesAndNewlines)
+        letterBits = GKRandomSource.sharedRandom().arrayByShufflingObjects(in: letterBits) as! [String]
+        
+        if letterBits.count == letterButtons.count {
+        
+            for i in 0 ..< letterBits.count {
+            
+                letterButtons[i].setTitle(letterBits[i], for: .normal)
+                
+            }
+        
+        }
     
     }
     
